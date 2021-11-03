@@ -6,9 +6,11 @@ Bündnis 90/Die Grünen Rheinland Pfalz
 
 Das PlugIn fügt einen Shortcode hinzu mit dem eine dreispaltige Ansicht
 der aktuellen Beiträge der Kategorie 'Presse' dargestellt werden kann.
-Die Seiten-Einstellung `Layout selbst gestalten` im __Sunflower__ Theme
+Die Seiten-Einstellung `Layout selbst gestalten` im
+[Sunflower](https://github.com/codeispoetry/sunflower)-Theme
 ist sinnvoll, weil dadurch die 3 Spalten etwas mehr Platz haben.
-Das PlugIn wird noch weiterentwickelt.
+Das Plugin wird noch weiter entwickelt. [Hier](https://github.com/Alzi/grlp_news)
+geht es zum Plugin auf Github. 
 
 Anwendung
 ---------
