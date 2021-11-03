@@ -8,7 +8,7 @@
 
 <div class="wp-block-column p-3 ms-0 ms-sm-3 rounded has-white-background-color has-background has-shadow">
 <article id="post-<?php the_ID(); ?>"class="post">
-    <header class="entry-header">
+    <header class="entry-header pb-2">
         <h2 class="h5 mb-3"><a class="news-title" href="<?php esc_url(the_permalink()); ?>"><?php the_title(); ?></a></h2>
         <div class="entry-meta mb-3"> 
             <span class="posted-on">
