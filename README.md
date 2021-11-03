@@ -27,6 +27,10 @@ gesetzt und es werden __3 Spalten__ der Kategorie __Presse__ angezeigt.
 Versionsverlauf
 ---------------
 
+### V 1.1.1
+
+- Abstand zwischen dem _Header_ der Spalte und dem _Inhalt_ veringert.
+
 ### V 1.1
 
 - Durch das Attribut `spalten` kann die Anzahl der angezeigten Spalten
