@@ -19,23 +19,26 @@ function grlp_news_shortcode_init()
 function grlp_news_view( $atts, $content, $shortcode_tag )
 {
     $html = '';
-    $news_title = '';
-    $num_posts = 3;
-    // $is_first_column = true;
-    if ( ! empty( $atts )) {
-        if ( isset( $atts['titel'])) {
-            $news_title = wp_strip_all_tags($atts['titel']);
-        }
-        if ( isset( $atts['spalten'])) {
-            $num_posts = intval( $atts['spalten'] );
-        }
-    }
+    extract( 
+        shortcode_atts( 
+            array(
+                "titel"     => '',
+                "spalten"   => 3,
+                "kategorie" => 'presse',
+            ),
+            $atts
+        )
+    );
+
+    $num_posts = intval( $spalten );
+    $news_title = wp_strip_all_tags( $titel );
+    $category = wp_strip_all_tags( $kategorie );
 
     $query = new WP_Query(
         [
             'post_type' => 'post',
             'posts_per_page' => $num_posts,
-            'category_name' => 'presse',
+            'category_name' => $category,
             'post_status' => 'publish',
         ]
     );
@@ -49,7 +52,6 @@ function grlp_news_view( $atts, $content, $shortcode_tag )
             ob_start();
             require('templates/news_column.php');
             $html .= ob_get_clean();
-            // $is_first_column = false;
         }
     }
 

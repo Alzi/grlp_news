@@ -13,7 +13,16 @@ Das PlugIn wird noch weiterentwickelt.
 Anwendung
 ---------
 
-	[news titel="Eine optionale Überschrift"]
+	[news 
+		titel="Eine optionale Überschrift"
+		spalten="<anzahl der darzustellenden Spalten>"
+		kategorie="<name der Kategorie>"
+	]
+
+Der Shortcode muss in einer Zeile stehen. Hier ist es nur zur besseren
+Darstellung der möglichen Attribute mehrzeilig dargestellt. Alle Attribute
+können weggelassen werden. Dann wird __keine__ Überschrift über die Spalten
+gesetzt und es werden __3 Spalten__ der Kategorie __Presse__ angezeigt.
 
 Versionsverlauf
 ---------------
@@ -22,6 +31,9 @@ Versionsverlauf
 
 - Durch das Attribut `spalten` kann die Anzahl der angezeigten Spalten
   gesteuert werden. (Nur eine Zeile möglich)
+
+- Durch das Attribut `kategorie` kann die Kategorie aus der die Artikel
+  ausgewählt werden sollen gesetzt werden.
 
 ### V 1.0
 
