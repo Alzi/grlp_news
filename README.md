@@ -15,16 +15,13 @@ geht es zum Plugin auf Github.
 Anwendung
 ---------
 
-	[news 
-		titel="Eine optionale Überschrift"
-		spalten="<anzahl der darzustellenden Spalten>"
-		kategorie="<name der Kategorie>"
-	]
+Beispiel
 
-Der Shortcode muss in einer Zeile stehen. Hier ist es nur zur besseren
-Darstellung der möglichen Attribute mehrzeilig dargestellt. Alle Attribute
-können weggelassen werden. Dann wird __keine__ Überschrift über die Spalten
-gesetzt und es werden __3 Spalten__ der Kategorie __Presse__ angezeigt.
+	[news titel="Aktuelle Nachrichten" spalten="3" kategorie="Presse"]
+
+Alle Attribute können auch weggelassen werden.
+Dann wird __keine__ Überschrift über die Spalten gesetzt und es werden
+__3 Spalten__ der Kategorie __Presse__ angezeigt.
 
 Versionsverlauf
 ---------------
@@ -44,4 +41,4 @@ Versionsverlauf
 ### V 1.0
 
 - Eine 3-spaltige Ansicht der aktuellsten Beiträge aus der Kategorie 'Presse'
-- Durch das Attribut `titel` kann einen H1-Überschrift darüber gestellt werden.
+- Durch das Attribut `titel` kann eine H1-Überschrift darüber gestellt werden.
