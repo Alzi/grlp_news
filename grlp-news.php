@@ -21,6 +21,7 @@ function grlp_news_view( $atts, $content, $shortcode_tag )
     $html = '';
     $news_title = '';
     $num_posts = 3;
+    // $is_first_column = true;
     if ( ! empty( $atts )) {
         if ( isset( $atts['titel'])) {
             $news_title = wp_strip_all_tags($atts['titel']);
@@ -48,6 +49,7 @@ function grlp_news_view( $atts, $content, $shortcode_tag )
             ob_start();
             require('templates/news_column.php');
             $html .= ob_get_clean();
+            // $is_first_column = false;
         }
     }
 
