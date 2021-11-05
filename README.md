@@ -26,11 +26,15 @@ __3 Spalten__ der Kategorie __Presse__ angezeigt.
 Versionsverlauf
 ---------------
 
-### V 1.1.1
+#### V 1.1.2
+
+- Link zur Github-Seite der Beschreibung hinzugefügt.
+
+#### V 1.1.1
 
 - Abstand zwischen dem _Header_ der Spalte und dem _Inhalt_ veringert.
 
-### V 1.1
+#### V 1.1
 
 - Durch das Attribut `spalten` kann die Anzahl der angezeigten Spalten
   gesteuert werden. (Nur eine Zeile möglich)
@@ -38,7 +42,7 @@ Versionsverlauf
 - Durch das Attribut `kategorie` kann die Kategorie aus der die Artikel
   ausgewählt werden sollen gesetzt werden.
 
-### V 1.0
+#### V 1.0
 
 - Eine 3-spaltige Ansicht der aktuellsten Beiträge aus der Kategorie 'Presse'
 - Durch das Attribut `titel` kann eine H1-Überschrift darüber gestellt werden.
