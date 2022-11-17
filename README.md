@@ -26,6 +26,10 @@ __3 Spalten__ der Kategorie __Presse__ angezeigt.
 Versionsverlauf
 ---------------
 
+#### V 1.1.3
+
+- BugFix: Ein eingegebener Titel wurde immer durch "Aktuelle Nachrichten" überschrieben (thanks to Philipp)
+
 #### V 1.1.2
 
 - Link zur Github-Seite der Beschreibung hinzugefügt.
