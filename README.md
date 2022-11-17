@@ -28,7 +28,8 @@ Versionsverlauf
 
 #### V 1.1.3
 
-- BugFix: Ein eingegebener Titel wurde immer durch "Aktuelle Nachrichten" überschrieben (thanks to Philipp)
+- BugFix: Ein übergebener Titel im shortcode wurde immer durch 
+"Aktuelle Nachrichten" überschrieben (thanks to Philipp)
 
 #### V 1.1.2
 
