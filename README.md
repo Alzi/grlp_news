@@ -26,6 +26,10 @@ __3 Spalten__ der Kategorie __Presse__ angezeigt.
 Versionsverlauf
 ---------------
 
+#### V 1.1.4
+
+- NewFeature: Durch den Parameter `ansicht="zeilen"` könnnen die Artikel untereinander dargestellt werden. Die Anzahl der Artikel wird weiterhin über den Parameter `spalten` geregelt. (thanks to Philipp)
+
 #### V 1.1.3
 
 - BugFix: Ein übergebener Titel im shortcode wird nicht mehr länger durch

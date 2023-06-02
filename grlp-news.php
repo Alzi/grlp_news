@@ -27,6 +27,7 @@ function grlp_news_view( $atts, $content, $shortcode_tag )
                 "titel"     => '',
                 "spalten"   => 3,
                 "kategorie" => 'presse',
+                "ansicht"   => 'spalten'
             ),
             $atts
         )
@@ -35,6 +36,7 @@ function grlp_news_view( $atts, $content, $shortcode_tag )
     $num_posts = intval( $spalten );
     $news_title = wp_strip_all_tags( $titel );
     $category = wp_strip_all_tags( $kategorie );
+    $view = wp_strip_all_tags( $ansicht );
 
     $query = new WP_Query(
         [
