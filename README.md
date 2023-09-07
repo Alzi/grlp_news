@@ -26,6 +26,10 @@ __3 Spalten__ der Kategorie __Presse__ angezeigt.
 Versionsverlauf
 ---------------
 
+#### V 1.1.6
+
+- Simpler Bugfix: Datum wird nun auch angezeigt wenn mehrer News-Posts am selben Tag veröffentlicht werden.
+
 #### V 1.1.5
 
 - Simpler Bugfix: Link in der Plugin Beschreibung korrigiert.
