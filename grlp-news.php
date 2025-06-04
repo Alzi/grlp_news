@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Grlp-News 
  * Description: Fügt einen Shortcode [news] hinzu, der es ermöglicht eine 3-spaltige Ansicht der neuesten Artikel anzuzeigen. Die Kategorie 'Presse' ist voreingestellt kann aber angepasst werden. Die 3 Spalten werden in gleicher Höhe angezeigt. Weitere Informationen gibt es auf der dazugehörigen Seite auf <a href="https://github.com/alzi/grlp_news">Github</a>
- * Version: 1.1.6
+ * Version: 1.2
  * License: GPL v3 
  * License URI: https://www.gnu.org/licenses/gpl-3.0 
  * Author: Marc Dietz 
@@ -27,13 +27,17 @@ function grlp_news_view( $atts, $content, $shortcode_tag )
                 "titel"     => '',
                 "spalten"   => 3,
                 "kategorie" => 'presse',
-                "ansicht"   => 'spalten'
+                "ansicht"   => 'spalten',
+                "anzahl"    => 3,
+                "nur_bild"  => false
             ),
             $atts
         )
     );
 
-    $num_posts = intval( $spalten );
+    $num_posts = intval( $anzahl );
+    $num_cols = intval( $spalten );
+    $img_only = boolval( $nur_bild );  
     $news_title = wp_strip_all_tags( $titel );
     $category = wp_strip_all_tags( $kategorie );
     $view = wp_strip_all_tags( $ansicht );

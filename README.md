@@ -17,14 +17,32 @@ Anwendung
 
 Beispiel
 
-	[news titel="Aktuelle Nachrichten" spalten="3" kategorie="Presse"]
+	[news titel="Aktuelle Nachrichten" anzahl="3" kategorie="Presse"]
 
 Alle Attribute können auch weggelassen werden.
 Dann wird __keine__ Überschrift über die Spalten gesetzt und es werden
 __3 Spalten__ der Kategorie __Presse__ angezeigt.
+Wenn ein Beitragsbild eingestellt ist, wird es direkt nach dem Titel angezeigt.
+Mit der Option __nur_bild="wahr"__ kann der Teasertext dann auch weggelassen
+werden. Will man diese Option wieder ausschalten, muss man sie einfach wieder löschen.
+(`nur_bild="falsch"` funktioniert nicht.)
 
 Versionsverlauf
 ---------------
+
+#### V 1.2
+
+**Features:**
+- Die option `anzahl` gibt jetzt an, wie viele Posts angezeigt werden sollen.
+  Die frühere option `spalten` soll dann ab **V1.2.1** die Anzahl der Spalten
+  angeben, so dass auch mehrzeilige Darstellung möglich wird.
+- Wenn ein Beitragsbild existiert wird es auch angezeigt. 
+- Mit der Option `nur_bild="wahr"` kann auch der Teasertext bei vorhandenem 
+Bild ausgeblendet werden.
+
+**Bugfixes:**
+- Die Titelschrift wird nicht mehr angeschnitten (padding hinzugefügt)
+
 
 #### V 1.1.6
 

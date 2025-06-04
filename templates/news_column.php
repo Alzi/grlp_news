@@ -1,7 +1,6 @@
 <?php
     $tags = wp_get_post_tags(get_the_ID(), array()); 
     $categories = wp_get_post_categories(get_the_ID(), array('fields' => 'all'));
-    // $spacing = $is_first_column ? ' ms-0' : ' ms-0 ms-sm-3';
 ?>
 
 <!-- .archive-loop span.posted-on > time.entry-date -->
@@ -13,8 +12,8 @@
 <?php endif; ?>
 <article id="post-<?php the_ID(); ?>"class="post">
     <header class="entry-header pb-2">
-        <h2 class="h5 mb-3"><a class="news-title" href="<?php esc_url(the_permalink()); ?>"><?php the_title(); ?></a></h2>
-        <div class="entry-meta mb-3"> 
+        <h2 class="h5 mb-3 p-1"><a class="news-title" href="<?php esc_url(the_permalink()); ?>"><?php the_title(); ?></a></h2>
+        <div class="entry-meta mb-2"> 
             <span class="posted-on">
                 <time datetime="<?php
                     echo get_the_date('c');
@@ -25,10 +24,17 @@
         </div>
     </header>
     <div class="entry-content">
+<?php if ( has_post_thumbnail(get_the_ID()) ) : ?>
+        <?php the_post_thumbnail(); ?>
+        <?php if (! $img_only) : ?>
+          <a href="<?php esc_url(the_permalink());?>" rel="bookmark"><p class="mt-3"><?php echo( get_the_excerpt() ); ?></p></a>
+        <?php endif; ?>
+<?php else: ?>
         <a href="<?php esc_url(the_permalink());?>" rel="bookmark"><?php the_excerpt(); ?></a>
+<?php endif; ?>
     </div>
     <footer class="entry-footer">
-    <p>
+    <p <?php echo ($img_only && has_post_thumbnail() ? 'class="mt-3"' : '');?>>
     <?php if ($categories): ?>
     <?php $num_of_cats = count($categories); ?>
         <span class="cats-links small">

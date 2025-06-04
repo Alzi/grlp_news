@@ -1,5 +1,4 @@
 .gitignore          export-ignore
 .gitattributes      export-ignore
-view_cards.html     export-ignore
 TODO.md             export-ignore
 Makefile            export-ignore
