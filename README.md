@@ -30,26 +30,21 @@ werden. Will man diese Option wieder ausschalten, muss man sie einfach wieder l�
 Versionsverlauf
 ---------------
 
-#### V 1.2.1 (schon mal angelegt, noch nicht auf github, diese Bemerkung dann löschen.)
+#### V 1.2.1
 
-**Features:**
 - Die Optionen `spalten` funktioniert nun, wie sie soll. Wenn `anzahl` > `spalten`
 entstehen mehrere Zeilen.
-
-**Bugfixes:**
+- Thumbnail-Größe angepasst, Teasertext umfließt das Thumbnail in der Zeilen-Ansicht.
 - Typo
 
 #### V 1.2
 
-**Features:**
 - Die option `anzahl` gibt jetzt an, wie viele Posts angezeigt werden sollen.
   Die frühere option `spalten` soll dann ab **V1.2.1** die Anzahl der Spalten
   angeben, so dass auch mehrzeilige Darstellung möglich wird.
 - Wenn ein Beitragsbild existiert wird es auch angezeigt. 
 - Mit der Option `nur_bild="wahr"` kann auch der Teasertext bei vorhandenem 
 Bild ausgeblendet werden.
-
-**Bugfixes:**
 - Die Titelschrift wird nicht mehr angeschnitten (padding hinzugefügt)
 
 
