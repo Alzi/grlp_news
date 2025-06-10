@@ -6,7 +6,7 @@
 <!-- .archive-loop span.posted-on > time.entry-date -->
 
 <?php if ($view == 'spalten') : ?>
-<div class="wp-block-column p-3 ms-0 ms-sm-3 rounded has-white-background-color has-background has-shadow">
+<div class="wp-block-column p-3 ms-0 ms-sm-3 mt-sm-3 rounded has-white-background-color has-background has-shadow">
 <?php elseif ($view == 'zeilen') : ?>
 <div class="p-3 mb-4 rounded has-white-background-color has-background has-shadow">
 <?php endif; ?>
