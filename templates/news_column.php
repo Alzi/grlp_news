@@ -26,9 +26,9 @@ $categories = wp_get_post_categories(get_the_ID(), array('fields' => 'all'));
             <div class="entry-content">
                 <?php if (has_post_thumbnail(get_the_ID())) : ?>
                     <?php if ($view == 'zeilen'): ?>
-                        <?php the_post_thumbnail(array(null, 300), ['class' => 'float-start me-3']); ?>
+                        <?php the_post_thumbnail(array(500, null), ['class' => 'float-lg-start float-sm-none me-3']); ?>
                     <?php else: ?>
-                        <?php the_post_thumbnail(array(null, 300)); ?>
+                        <?php the_post_thumbnail('medium_large'); ?>
                     <?php endif; ?>
                     <?php if (! $img_only) : ?>
                         <a href="<?php esc_url(the_permalink()); ?>" rel="bookmark">
