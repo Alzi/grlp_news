@@ -25,7 +25,7 @@
     </header>
     <div class="entry-content">
 <?php if ( has_post_thumbnail(get_the_ID()) ) : ?>
-        <?php the_post_thumbnail(); ?>
+        <?php the_post_thumbnail('medium'); ?>
         <?php if (! $img_only) : ?>
           <a href="<?php esc_url(the_permalink());?>" rel="bookmark"><p class="mt-3"><?php echo( get_the_excerpt() ); ?></p></a>
         <?php endif; ?>
@@ -55,7 +55,11 @@
         </span>
     <?php endif; ?>
     </p>
-    </footer> 
+    </footer>
     </article>
     <!-- <p class="has-text-align-right"><a href="<?php //esc_url(the_permalink()); ?>" class="continue-reading">weiterlesen</a></p> -->
 </div>
+<?php if ( $view == "spalten" && $cur_column % $spalten == 0 && $cur_column < $anzahl): ?>
+</div>
+<div class="wp-block-columns archive archive-loop">
+<?php endif; ?>

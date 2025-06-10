@@ -30,6 +30,15 @@ werden. Will man diese Option wieder ausschalten, muss man sie einfach wieder l�
 Versionsverlauf
 ---------------
 
+#### V 1.2.1 (schon mal angelegt, noch nicht auf github, diese Bemerkung dann löschen.)
+
+**Features:**
+- Die Optionen `spalten` funktioniert nun, wie sie soll. Wenn `anzahl` > `spalten`
+entstehen mehrere Zeilen.
+
+**Bugfixes:**
+- Typo
+
 #### V 1.2
 
 **Features:**
@@ -46,7 +55,7 @@ Bild ausgeblendet werden.
 
 #### V 1.1.6
 
-- Simpler Bugfix: Datum wird nun auch angezeigt wenn mehrer News-Posts am selben Tag veröffentlicht werden.
+- Simpler Bugfix: Datum wird nun auch angezeigt wenn mehrere News-Posts am selben Tag veröffentlicht werden.
 
 #### V 1.1.5
 

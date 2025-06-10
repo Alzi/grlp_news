@@ -55,11 +55,13 @@ function grlp_news_view( $atts, $content, $shortcode_tag )
         ob_start();
         require ('templates/news_header.php');
         $html .= ob_get_clean();
+        $cur_column = 1;
         while ($query->have_posts()) {
             $query->the_post();
             ob_start();
             require('templates/news_column.php');
             $html .= ob_get_clean();
+            $cur_column ++;
         }
     }
 
